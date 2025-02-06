@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="chatbot/chatbot.css">
+
+
+</head>
+
+
+<body>
+  <header>
+    <div class="logo">Donate<b style="color: #8aaee0;">Dish</b></div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li> <a href="contact.html" class="active">Contact</a> </li>
+        <li><a href="profile.php">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+  <!--<section class="cover">
+
+  </section> -->
+  <p class="heading" style="margin: 20px; text-align: center;">Contact Us</p>
+
+
+
+  <!-- <h1 class="heading">Contact Us</h1>  -->
+  <div class="contact-form">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <!-- Hidden access key -->
+      <input type="hidden" name="access_key" value="e0630778-a382-4f61-93cd-649c0c7d1ae7">
+      
+      <!-- Name input -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+      <br>
+
+      <!-- Email input -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+      <br>
+
+      <!-- Message textarea -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+      <br>
+
+      <!-- Submit button -->
+      <input type="submit" value="Send" style="background-color: #0563bb; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 50px;">
+    </form>
+</div>
+
+  </div>
+  <div class="contact-info" style="padding: 10px;">
+    <p>Email: donatedish@gmail.com</p>
+    <p>Phone: (+91)9342363469</p>
+    <p>Address: VIT University</p>
+  </div>
+
+
+  <div class="chatbot" style="padding: 30px; background-color: #8aaee0;">
+    <p style="font-size: 23px; text-align: center;">Chat Bot Support <img src="bot-mini.png" alt="" height="20"></p>
+
+
+    <div id="container" class="container">
+
+
+      <div id="chat" class="chat">
+        <div id="messages" class="messages"></div>
+        <input id="input" type="text" placeholder="Say something..." autocomplete="off" />
+      </div>
+
+    </div>
+    <div class="help">
+      <p style="font-size: 23px; text-align: center; padding:10px;">Help & FAQs?</p>
+
+      <button class="accordion">how to donate food ?</button>
+      <div class="panel">
+        <p>1)click on <a href="fooddonateform.php">donate</a> in home page </p>
+        <p>2)fill the details </p>
+        <p>3)click on submit</p>
+      </div>
+
+      <button class="accordion">How will my donation be used?</button>
+      <div class="panel">
+        <p style="padding: 10px;">Your generous donation will contribute to advancing our mission and supporting the
+          various programs and initiatives we offer. It will enable us to keep providing essential assistance to those
+          who need it most. For more details about our programs, please visit our website. Should you have any questions
+          or concerns, don't hesitate to reach out to us.</p>
+      </div>
+
+      <button class="accordion">What should I do if my food donation is near or past its expiration date?</button>
+      <div class="panel">
+        <p style="padding: 10px;">We appreciate your willingness to donate, but to ensure the safety of our clients we
+          can't accept food that is near or past its expiration date. We recommend checking expiration dates before
+          making a donation or contact us for further guidance</p>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+<script type="text/javascript" src="chatbot/chatbot.js"></script>
+<script type="text/javascript" src="chatbot/constants.js"></script>
+<script type="text/javascript" src="chatbot/speech.js"></script>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+</script>
+
+</html>

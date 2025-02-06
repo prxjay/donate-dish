@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Donate<b style="color: #8aaee0;">Dish</b></div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="profile.php">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+  <style>
+    .coverc {
+      width: 100%;
+      height: 400px;
+      background: url('img1.jpg')no-repeat;
+      background-size: cover;
+      display: grid;
+      place-items: center;
+      padding-top: 8rem;
+
+    }
+
+    .title {
+      font-size: 38px;
+      text-align: center;
+      align-items: center;
+    }
+
+    .heading {
+  text-align: center;
+}
+
+    .para p {
+      font-size: 23px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    @media (max-width: 767px) {
+      .para p {
+        font-size: 16px;
+        /* margin-left: 10px; */
+      }
+
+      #pptslide {
+        height: 200px;
+        width: 300px;
+
+      }
+
+      #map {
+        height: 200px;
+        width: 300px;
+
+
+      }
+
+      #overview {
+        height: 200px;
+        width: 300px;
+      }
+
+      .title {
+        font-size: 28px;
+        margin: 10px;
+        text-align: center;
+        align-items: center;
+      }
+
+      .map {
+  text-align: center;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+
+    }
+  </style>
+  <br>
+  <br>
+  <!-- <section class="coverc">
+        
+    
+    </section> -->
+  <p class="heading">About us</p>
+  <!-- <p  style=" font-size:30px ; text-align: center;" > ABOUT <span>US</span> </p> -->
+
+  <!-- <br> -->
+  <div class="para">
+    <!-- <p>"Welcome to Food Donate, India's largest and most trusted donating platform that connects donors to verified nonprofits. FoodDonate helps you become a ray of hope for people in need. Choose a cause that is close to your heart and join hands with millions of donors like you who aim to make this world a better place."</p> -->
+
+    <p>We are dedicated to reducing food waste and hunger by connecting food donors with NGOs and volunteers through a
+      seamless, AI-powered platform. Our mission is to ensure that surplus food reaches those in need efficiently while
+      promoting sustainability and social impact.</p>
+  </div>
+  <br>
+
+
+
+  <br>
+
+
+  <div class="map">
+    <p style="font-size:30px;text-align: center;">Location</p>
+    <iframe width="777" height="473" style="border:0;" loading="lazy" allowfullscreen
+      src="https://maps.google.com/maps?q=12.943949312273146,79.13223993253342&z=15&output=embed">
+    </iframe>
+  </div>
+
+</body>
+
+</html>

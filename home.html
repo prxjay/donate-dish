@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Dish</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet"></head>
+
+<body>
+  <header>
+    <div class="logo">Donate<b style="color: #8aaee0;">Dish</b></div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="profile.php">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    document.querySelector(".hamburger").onclick = function () {
+      document.querySelector(".nav-bar").classList.toggle("active");
+    }
+  </script>
+
+  <!-- Updated Banner Section -->
+  <section class="banner">
+<p class="logo" style="color: white;"> Welcome to Donate <b style="color: #8aaee0;">Dish</b></p>
+<p class="para" style="color: white;"> What would you like to do?</p>
+
+    <div class="button-container">
+        <a href="fooddonateform.php">Donate Food</a>
+        <a href="admin/signup.php">Procure Food</a>
+    </div>
+  </section>
+
+  <div class="content">
+    <p class="quote">
+      “We make a living by what we get, but we make a life by what we give.”
+    </p>
+  </div>
+
+  <div class="photo">
+    <br>
+    <p class="heading">Our Works</p>
+    <br>
+    <p class="subheading">"Preventing bulk food wastage by connecting donors with NGOs for efficient distribution."</p>
+    <br>
+    <div class="wrapper">
+      <div class="box1"><img src="img/child1.JPG" alt=""></div>
+      <div class="box2"><img src="img/child2.jpg" alt=""></div>
+      <div class="box3"><img src="img/child3.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <div class="deli">
+    <p class="heading">DOOR PICKUP</p>
+    <br>
+    <p class="para">"Your donation will be immediately collected and sent to needy people."</p>
+    <img src="img/delivery.gif" alt="" class="delivery-image">
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <p class="about">
+        <span> About us</span>The core idea behind this Food Waste Management initiative is to rescue surplus meals from places like hotels, restaurants, and wedding venues, and deliver them directly to people who truly need it.
+      </p>
+    </div>
+    <div class="footer-center">
+      <p><span> Contact</span></p>
+      <p> (+91) 9342363469</p>
+      <p><a href="#">donatedish@gmail.com</a></p>
+    </div>
+    <div class="footer-right">
+      <h2> Donate<span> Dish</span></h2>
+      <p class="menu">
+        <a href="#"> Home</a> |
+        <a href="about.html"> About</a> |
+        <a href="profile.php"> Profile</a> |
+        <a href="contact.html"> Contact</a>
+      </p>
+      <p class="name"> DonateDish &copy 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
